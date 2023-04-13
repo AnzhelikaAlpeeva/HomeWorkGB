@@ -5,13 +5,13 @@
 // 7 -> нет
 
 Console.WriteLine("Введите число: ");
-num = int.Parse(Console.ReadLine());
+int i = int.Parse(Console.ReadLine());
 
-if (num % 2 == 1)
+if (i % 2 == 1)
 {
-    Console.WriteLine("Число " + num + " является: НЕЧЁТНЫМ");
+    Console.WriteLine("Число " + i + " является: НЕЧЁТНЫМ");
 }
 else
 {
-    Console.WriteLine("Число " + num + "является: ЧЁТНЫМ");
+    Console.WriteLine("Число " + i + "является: ЧЁТНЫМ");
 }
