@@ -7,11 +7,11 @@
 Console.WriteLine("Введите число: ");
 int i = int.Parse(Console.ReadLine());
 
-if (i % 2 == 1)
+if (i % 2 == 0)
 {
-    Console.WriteLine("Число " + i + " является: НЕЧЁТНЫМ");
+    Console.WriteLine($"Число, {i} четное");
 }
 else
 {
-    Console.WriteLine("Число " + i + "является: ЧЁТНЫМ");
+    Console.WriteLine($"Число, {i} нечетное");
 }
