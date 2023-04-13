@@ -14,7 +14,6 @@ if (num_2 > max)
 {
     max = num_2;
 }
-
 if (num_3 > max)
 {
     max = num_3;
