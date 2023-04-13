@@ -9,8 +9,8 @@ Console.WriteLine("Введите второе число");
 int b = int.Parse(Console.ReadLine());
 if (a > b) 
 {
-    System.Console.WriteLine("Первое число: " + a + "больше, чем второе: " + b);
+    Console.WriteLine("Первое число: " + a + " больше, чем второе: " + b);
 }
 else{
-    System.Console.WriteLine("Второе число: " + b + "больше, чем первое: " + a);
+    Console.WriteLine("Второе число: " + b + " больше, чем первое: " + a);
 }
