@@ -5,11 +5,11 @@
 
 int ReadCordinat(string arg)
 { 
-    System.Console.WriteLine($"Введите {arg}");
+    Console.WriteLine($"Введите {arg}");
     int i;
-    while (! int.TryParse(System.Console.ReadLine(), out i))
+    while (! int.TryParse(Console.ReadLine(), out i))
     {
-        System.Console.WriteLine("нет значения");
+        Console.WriteLine("нет значения");
     }
     return i;
 }
@@ -20,7 +20,7 @@ var B = (x: ReadCordinat("X2"), y: ReadCordinat("Y2"), ReadCordinat("Z2"));
 double DistanceOf((int x, int y, int z) A, (int x, int y, int z) B)
 {
     double distans = Math.Sqrt(Math.Pow((A.x-B.x),2) + Math.Pow((A.y-B.y),2) + Math.Pow((A.z-B.z),2));
-    System.Console.WriteLine(distans);
+    Console.WriteLine(distans);
     return distans;
 }
 
