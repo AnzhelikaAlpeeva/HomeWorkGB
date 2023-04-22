@@ -37,13 +37,47 @@
 // System.Console.WriteLine($"Сумма чисел от 1 до {A}^ {getsum (A)}");
 
 
-
 // Задача 26: Напишите программу, которая принимает 
 // на вход число и выдаёт количество цифр в числе.
 // 456 -> 3
 // 78 -> 2
 // 89126 -> 5
 
+// Console.WriteLine("Введите число: ");
+// int number = int.Parse(Console.ReadLine());
+
+// int count = 0;
+// while(number != 0)
+// {
+//     number /= 10;
+//     count++;
+// }
+// Console.WriteLine($"Количество цифр в числе: {count}");
+
+// Второе решение:
+
+// Console.WriteLine("Введите число: ");
+// int num = 0;
+// while(!int.TryParse(Consile.ReadLine(), out num))
+// {
+//     Console.WriteLine("Это не число!");
+// }
+// int numDigit = 0;
+// numDigit = NumberDigit(num);
+
+// int NumberDigit(int number)
+// {
+//     number = Math.Abs(number);
+//     int count = 0;
+//     while(number > 0)
+//     {
+//         number = number / 10;
+//         count++;
+//     }
+//     return count;
+// }
+
+// Console.WriteLine(numDigit);
 
 // Console.WriteLine(byte.MaxValue);
 // Console.WriteLine(byte.MinValue); // 8
@@ -65,7 +99,20 @@
 // 4 -> 24 
 // 5 -> 120
 
+// int ReadInt(string argument)
 
+// int Factorial(int x)
+// {
+//     int fact = 1;
+//     for(int i = 1; i < x; i++)
+//     {
+//         fact = fact * (i + 1);
+//     }
+//     return fact;
+// }
+
+// int x = ReadInt("Введите число: ");
+// Console.WriteLine(Factorial(x));
 
 // Задача 30: Напишите программу, которая 
 // выводит массив из 8 элементов, заполненный 
