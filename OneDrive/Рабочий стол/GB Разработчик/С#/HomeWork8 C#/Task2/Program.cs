@@ -59,9 +59,9 @@ void SumPow(int [,] array)
             sum += array[i,j];
         }
         Console.WriteLine($"{sum}");
-        }
     }
 }
+
 
 
 InitArray();
