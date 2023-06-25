@@ -189,5 +189,3 @@
 
 
 # ##############   SEMINAR3      ################
-colors = {'green', 'blue','gray'}
-colors.discard('red') 
