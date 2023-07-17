@@ -23,7 +23,7 @@ def ritm(some_str):
                 count += 1
         res_set.add(count)
     if len(res_set) == 1:
-        return 'С ристмом все в порядке: Парам пам-пам'
+        return 'С ритмом все в порядке: Парам пам-пам'
     return 'С ритмом все не в порядке: Пам парам'
 
 print(ritm(str_ritm))
