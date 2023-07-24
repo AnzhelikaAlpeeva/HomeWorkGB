@@ -17,6 +17,10 @@ def fill_person():
     phone = input('Введите телефон: ')
     return surname, name, patronym, phone
 
+# def show_person():
+#     surname = input('Введите фамилию человека, которого ищите: ')
+#     return surname
+
 def show_person():
     char = input('Введите фамилию/имя/отчество/телефон человека, которого ищите: ')
     data = open('file_catalog/catalog.txt', 'r', encoding='utf-8')
