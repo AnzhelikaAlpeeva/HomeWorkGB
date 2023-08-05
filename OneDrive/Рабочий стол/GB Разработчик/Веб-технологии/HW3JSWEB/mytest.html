@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Что такое HTML</title>
+<!-- 1) Создать страницу, которая спрашивает имя у пользователя и выводит его с помощью функции. -->
+    <script> 
+        let name = prompt('Введите свое имя: ');
+        alert (name+', привет!');
+    </script>
+<!-- 2) Перепишите код, используя конструкцию switch-case, запрашивая возраст пользователя через диалоговое окно -->
+    <script> 
+        var age = prompt("Уточните ваш возраст");
+        switch (true) {
+            case (age <= 14):
+                alert('Вам пока не понять.');
+                break;
+            case (age > 14):
+                alert('Вы теперь можете узнать больше про HTML');
+                break;
+            }
+    </script>
+</head>
+<body>
+    <h1 style="color:rgb(77, 73, 187);">HTML-что это?</h1>
+    <hr>
+    <p> <img src="https://avatars.mds.yandex.net/i?id=932c682f1dc923a08faaaffa1b7993f18eb998e4-6441855-images-thumbs&n=13" alt="Файл как <html>" width="300"></p>
+    <h2>HTML</h2>
+    <ul>
+        <li>Код, который используется для структурирования и отображения веб-страницы и ее контента</li>
+        <li>Например:</li>
+    </ul>
+        <p>Контент(текст), может быть, представлен в виде множества параграфов</p>
+        <ol>
+            <li>Маркированный списков</li>
+            <li>или с использованием изображений (как представлено выше), или таблиц данных</li>
+        </ol> 
+        <section>
+            <div>
+                <h1 style="font-size: 45px;">Wikipedia</h1>
+                <h2 style="font-size: 15px;">HTML — стандартизированный язык гипертекстовой разметки документов для просмотра веб-страниц в браузере. Веб-браузеры получают HTML документ от сервера по протоколам</h2>
+            </div> 
+        </section>  
+        <h2>РАЗМЕТКА</h2>
+<!-- Сделать так, чтобы при нажатии на кнопку менялся цвет и текст одного элемента <p> -->
+    <p class="color" id="el1"><em>Разметка в <strong>HTML</strong> осуществляется с помощью тегов</em></p>
+    <button class="button" id="el2">Смени цвет</button>
+    <ul>
+        <li>Теги - это метки, размечающие и каталогизирующие информацию для облегчения процесса поиска</li>
+        <li>Это ключевые слова, по которым браузер ориентируется, как воспринимать и оформлять материал на сайте</li>
+    </ul>
+    <p> <img src="https://yandex-images.clstorage.net/AU50dN187/3c2e06H1hR/zAVWVgvLUHPLbtrOjhBlLqgPDMcXDb9McKN0RvvVAfbe2grzQ4PE0SCy9rd05zQ624108VejmrWzLOg5cQgWHY5UEwdMjEczxnCV0IoNLD-4VA_AEAS3Hmn8J0mr1m6Zr6t5m23h7_UNmbzvf7BjcZCdOc0-u-aC5F7EOj9yPHreCWRwC981a95HvfOhElAPnVcUzBtDjDJLsCQb0ZdbtoysdIZm9e_6KZaz4mifSUvJhBrfCfPdtcpFzw4CRQJa8QhTZw_zFkjYWrDPmB9PPalwLdYJVo8SeIQRI9aOXbGAum6ve-rM1T6RqN1glXNu2YIGwjfsxbznZus3N14CQdggYG429zZv-1Kn54wLdTmVUDDHE2yYO3aFJwHCkEWSqbNCkVTw4fEhk7TXS5d1SuaFI9Ub1eStx17dOgl8Ol7ZCFRvOvwYb8RPrPatK1cBmUcEyCF3sAFXhSg405Fyp72CXINb_dbwKJCRx1W_VGjTqAHQONjEnO9v-yokVC522ypKcCn_GlTgeITFiBRVP7VYIPIve5k7XYYCDfSiWoyIjlOWW8LX4wKclMZnglV78YMG3CTK-o_FTs4KN1MkUekiaEY-yxh42FiM-a4tTS6SZizDAFaSK0qyHhXDjWCEhpxCokTW9NkTgJfvc5BpSMqEJecMwt-2y3XNECxjHXLtLVptLs04d9hKo_yAFE4IhUoG7jN6gAlvjgAn34B2jo2uX6ZV1vfQN7-Pw1OtSnH5jir_AurZsdVW8D0wdj9owAZIQQrxLE_Xco7wlStLEaFzIesLboMWcJUDO_aNS5K_uU6jRero-S69jcNav2dDzaoA-BvW4LnOTcY_B1gueeAGTXQR8DZK5F6e3L4HcQahVgr0BFqnEk2ULT_gr1Ctn6xNlEbUyes2pr_qZ75uS-iEOccz6fmn-kvnJCxyBUXTNk9PMOARROBzrvyCLUUttlcA7ChhgARWpisC-Z0" alt="Анатомия HTML элемента" width="400"></p>
+    <p><a href="https://gbcdn.mrgcdn.ru/uploads/asset/3936001/attachment/99030554336519bf9f1490abafb6e95d.pdf">Если хотите узнать более подробно про HTML и разметку веб-страниц</a></p>
+    <hr>
+    <p> <img src="mem.jpg" alt="Вопрос после прочтенного, кто лучший веб-разработчик:D" width="300"></p>
+<!-- Сделать так, чтобы при наведении на элемент его цвет менялся на другой (не обязательно делать при помощи js) -->
+    <div class="changecolor">Лучше всего HTML работает с CSS.</div>
+    <script src="scriptHW3.js" async></script>
+</body>
+</html>
