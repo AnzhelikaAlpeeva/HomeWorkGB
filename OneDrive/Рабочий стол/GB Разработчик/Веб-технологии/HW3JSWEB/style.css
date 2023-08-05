@@ -1,0 +1,25 @@
+body {
+    display: block;
+    margin: 8px;
+}
+.color {
+    color:rgb(63, 12, 111);
+}
+.fire {
+    color: red;
+}
+.button {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(71, 29, 162);
+    margin-bottom: 10px;
+}
+.button:hover {
+    background-color: blue;
+}
+.changecolor {
+    color:rgb(5, 5, 135);
+}
+.changecolor:hover {
+    color:brown;
+}
