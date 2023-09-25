@@ -1,1 +1,3 @@
 id: 2, Name: puzzle
+id: 0, Name: doll
+id: 2, Name: bear
