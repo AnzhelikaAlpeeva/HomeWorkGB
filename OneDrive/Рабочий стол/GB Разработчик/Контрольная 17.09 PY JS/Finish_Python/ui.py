@@ -22,4 +22,4 @@ def check_len_text_input(text, n):
 
 
 def goodbuy():
-    print("Приходите к нам еще =). До новых встреч!")
+    print("До новых встреч!")

@@ -2,7 +2,7 @@ import file_operation
 import Note
 import ui
 
-number = 6  # сколько знаков МИНИМУМ может быть в тексте заметки
+number = 6  
 
 
 def add():
@@ -13,14 +13,14 @@ def add():
             Note.Note.set_id(note)
     array.append(note)
     file_operation.write_file(array, 'a')
-    print('Заметка добавлена...')
+    print('Заметка добавлена.')
 
 
 def show(text):
     logic = True
     array = file_operation.read_file()
     if text == 'date':
-        date = input('Введите дату в формате dd.mm.yyyy: ')
+        date = input('Введите дату в формате дд.мм.гггг: ')
     for notes in array:
         if text == 'all':
             logic = False
@@ -33,11 +33,11 @@ def show(text):
             if date in Note.Note.get_date(notes):
                 print(Note.Note.map_note(notes))
     if logic == True:
-        print('Нет ни одной заметки...')
+        print('Нет ни одной заметки.')
 
 
 def id_edit_del_show(text):
-    id = input('Введите id необходимой заметки: ')
+    id = input('Введите id нужной заметки: ')
     array = file_operation.read_file()
     logic = True
     for notes in array:
@@ -48,12 +48,12 @@ def id_edit_del_show(text):
                 Note.Note.set_title(notes, note.get_title())
                 Note.Note.set_body(notes, note.get_body())
                 Note.Note.set_date(notes)
-                print('Заметка изменена...')
+                print('Заметка изменена.')
             if text == 'del':
                 array.remove(notes)
-                print('Заметка удалена...')
+                print('Заметка удалена.')
             if text == 'show':
                 print(Note.Note.map_note(notes))
     if logic == True:
-        print('Такой заметки нет, возможно, вы ввели неверный id')
+        print('Такой заметки нет.')
     file_operation.write_file(array, 'a')
